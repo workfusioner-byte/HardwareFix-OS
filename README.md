@@ -263,5 +263,5 @@ This project is licensed under the **MIT License** — see the [LICENSE](LICENSE
 ---
 
 <p align="center">
-  Built with ☕ espresso-brown pixels and ❤️ by the HardwareFix team.
+  Built with ☕ espresso-brown pixels and ❤️ by the @Charan0196  and @AkshayMamidala.
 </p>
