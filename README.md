@@ -9,16 +9,16 @@
 # 🔧 HardwareFix — One Platform. Every Hardware Fix.
 
 **HardwareFix** is a production-grade, hyperlocal hardware repair and assembly marketplace built with **Next.js 16 (App Router)**, designed to compete with platforms like [Urban Company](https://urbancompany.com). It connects homeowners with verified local technicians for services ranging from TV wall mounting to smart lock installation — with transparent pricing, real-time tracking, and an end-to-end booking flow.
-
+> **Deployed Demo**: https://hardwirefix.netlify.app/
 > **Live Demo**: Run locally with `npm run dev` → [http://localhost:3000](http://localhost:3000)
 
 ---
 
 ## 📸 Screenshots
 
-| Landing Page | Service Detail | Customer Dashboard |
-|---|---|---|
-| Hero + Search + Service Grid | Dynamic calculator + Gallery | Live tracking + Chat |
+<img width="1325" height="713" alt="Screenshot 2026-07-06 at 10 37 24 PM" src="https://github.com/user-attachments/assets/0599248d-bff2-4e1b-87e7-a1ca66c59e9f" />
+<img width="1318" height="698" alt="Screenshot 2026-07-06 at 10 37 54 PM" src="https://github.com/user-attachments/assets/0f7ac4b7-3200-454d-b59a-1acb783f420a" />
+
 
 ---
 
