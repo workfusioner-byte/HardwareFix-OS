@@ -1,0 +1,111 @@
+@import "tailwindcss";
+
+@variant dark (.dark &);
+
+:root {
+  color-scheme: light;
+  /* Warm cream, white and brown colors */
+  --background: #FFFFFF; /* Pure crisp white background */
+  --card: #FFFFFF;       /* Pure white card */
+  --text: #2E221B;       /* Deep dark coffee/brown text */
+  --primary: #4E3629;    /* Espresso brown primary color */
+  --success: #10B981;    /* Accent green */
+  --foreground: #2E221B;
+  --border: #E8E2D9;     /* Soft warm grey-cream border */
+}
+
+@theme {
+  /* System overrides mapped to CSS variables */
+  --color-background: var(--background);
+  --color-card: var(--card);
+  --color-text: var(--text);
+  --color-primary: var(--primary);
+  --color-success: var(--success);
+  --color-border: var(--border);
+
+  /* Specific Hex brand color palettes mapped to Cream/Brown Theme */
+  --color-brand-blue: #4E3629;   /* Primary Buttons - Deep Espresso Brown */
+  --color-brand-navy: #2E221B;   /* Headers - Dark Coffee Brown */
+  --color-brand-sky: #C68B59;    /* Hover State - Rich Caramel Tan */
+  
+  --color-brand-emerald: #10B981;
+  --color-brand-orange: #C68B59;  /* Caramel Tan */
+  --color-brand-purple: #7C5C43;  /* Purplish Cocoa */
+
+  --color-brand-white: #FFFFFF;
+  --color-brand-light: #FAF6F0;  /* Cream */
+  --color-brand-gray: #E8E2D9;   /* Warm Sand */
+  --color-brand-dark: #4E3629;
+  --color-brand-black: #1C130E;
+
+  /* Status Colors */
+  --color-status-success: #22C55E;
+  --color-status-warning: #F59E0B;
+  --color-status-danger: #EF4444;
+  --color-status-info: #0EA5E9;
+
+  /* Typography mapped to Google Fonts variables */
+  --font-sans: var(--font-inter), system-ui, -apple-system, sans-serif;
+  --font-mono: var(--font-jetbrains-mono), monospace;
+
+  /* Border Radius specifications */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-cards: 20px;
+  --radius-buttons: 14px;
+
+  /* Shadows specifications */
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.08);
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.12);
+  --shadow-lg: 0 24px 48px rgba(0, 0, 0, 0.18);
+}
+
+body {
+  background-color: var(--background);
+  color: var(--text);
+  font-family: var(--font-inter), system-ui, -apple-system, sans-serif;
+  transition: background-color 0.2s ease, color 0.2s ease;
+  overflow-x: hidden;
+}
+
+/* Glassmorphism utility classes */
+.glass {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.glass-light {
+  background: rgba(248, 250, 252, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(203, 213, 225, 0.3);
+}
+
+.dark .glass-light {
+  background: rgba(15, 23, 42, 0.7);
+  border: 1px solid rgba(71, 85, 107, 0.3);
+}
+
+
+
+/* Scrollbar customization */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #60A5FA;
+}
